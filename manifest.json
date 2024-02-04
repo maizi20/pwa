@@ -1,12 +1,20 @@
 {
   "name": "pwa",
   "short_name": "pwa",
-  "start_url": "/",
+  "description": "test...",
+  "start_url": "index.html",
   "display": "standalone",
+  "theme_color": "black",
+  "background_color": "black",
   "icons": [
     {
-      "sizes": "72x72",
-      "src": "https://github.githubassets.com/assets/apple-touch-icon-72x72-e090c8a282d0.png"
+      "src": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgNjQgNjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3QgeD0nMCcgeT0nMCcgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjMDAwJy8+PHJlY3QgeD0nMTYnIHk9JzE2JyB3aWR0aD0nMzInIGhlaWdodD0nMzInIGZpbGw9JyM0Y2MnLz48L3N2Zz4=",
+      "sizes": "150x150"
+    },
+    {
+      "src": "iron.svg",
+      "sizes": "12x12"
     }
   ]
 }
+
