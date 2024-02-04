@@ -8,7 +8,7 @@
   "background_color": "black",
   "icons": [
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgNjQgNjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3QgeD0nMCcgeT0nMCcgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyBmaWxsPScjMDAwJy8+PHJlY3QgeD0nMTYnIHk9JzE2JyB3aWR0aD0nMzInIGhlaWdodD0nMzInIGZpbGw9JyM0Y2MnLz48L3N2Zz4=",
+      "src": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMTUwIDE1MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMTUwJyBoZWlnaHQ9JzE1MCcgZmlsbD0nIzAwMCcvPjx0ZXh0IHg9JzMwJyB5PSc5MCc+UDwvdGV4dD48dGV4dCB4PSc1MCcgeT0nOTAnPlc8L3RleHQ+PHRleHQgeD0nODAnIHk9JzkwJz5BPC90ZXh0PjxzdHlsZT50ZXh0e2ZvbnQtc2l6ZTo0OHB4O2ZpbGw6IzA5Zn08L3N0eWxlPjwvc3ZnPg==",
       "sizes": "150x150"
     },
     {
