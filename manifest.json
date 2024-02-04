@@ -1,0 +1,12 @@
+{
+  "name": "pwa",
+  "short_name": "pwa",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "72x72",
+      "src": "https://github.githubassets.com/assets/apple-touch-icon-72x72-e090c8a282d0.png"
+    }
+  ]
+}
