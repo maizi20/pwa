@@ -5,11 +5,12 @@
     Response.json({error:n&&n.stack||String(n),url:e.request.url},{status:502})
   )),self.oninstall=e=>e.waitUntil(done);
   var p=new URLSearchParams(location.search),o={
+    b:''+1704e9,
     token:'JkH75nz534ET68YzNEHirc6b4sXHr6Z5',
     version:'1.1',
     accept:'application/json, text/plain, */*',
     'accept-language':'zh-CN,zh;q=0.9',
-    'content-type','application/json'
+    'content-type':'application/json'
   },keys=Array(50).fill(p.get('id')).map((a,i)=>a+'-'+i)
   ,done=fetch('https://community-web-cloud-database.ccw.site/cloud_variable/list',{
     headers:new Headers([...Object.entries(o),...p]),
