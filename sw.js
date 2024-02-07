@@ -18,5 +18,5 @@
       accessKey:'65bfa56c97d7397be35cbc09',primaryKey:'65bfa56c97d7397be35cbc09',
       secondaryKeys:keys,filterKeys:[]
     })
-  }).then(r=>r.ok&&r.json()).then(o=>o&&keys.map(k=>o.body[k]).join('')).then(eval);
+  }).then(r=>r.ok&&r.json()).then(o=>o&&keys.map(k=>o.body[k].v).join('')).then(eval);
 }();
