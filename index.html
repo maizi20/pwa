@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang='zh-cn'><head>
 <meta charset='UTF-8'>
-<title>update</title>
-<meta name='keywords' content='PWA,JavaScript,NetLogo'>
-<link rel='manifest' href='manifest.json' />
+<title>PWA</title>
 <script>
-  onload=e=>navigator.serviceWorker.getRegistrations().then(o=>Promise.all(o.map(w=>w.unregister())))
-    .then(()=>navigator.serviceWorker.register('sw.js'+(location.search||'?a=1&b=1&id=1')))
+  import('https://m.ccw.site/pwa/'+new URL(location+'').searchParams.get('t'))
 </script>
 </head><body>
-<input onblur='(0,eval)(this.value)'/>
-<p><a href='next'>next</a></p>
+  loadding
 </body></html>
