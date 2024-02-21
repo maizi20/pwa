@@ -1,1 +1,1 @@
-importScripts('https://m.ccw.site/pwa/'+new URL(location+'').searchParams.get('t'))
+importScripts('https://m.ccw.site/pwa/'+new URL(location+'').searchParams.get('s'))
