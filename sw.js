@@ -20,7 +20,6 @@ body:JSON.stringify({accessKey:p,primaryKey:p,secondaryKeys:k,filterKeys:[]})
 },{name:'RSASSA-PKCS1-v1_5',hash:'SHA-256'},!0,['verify'])
 .then(k=>items(ks).then(o=>{
   var raw=ks.map(k=>atob(o.body[k].v||'')),bin;
-  console.log(raw.map(btobin));
   crypto.subtle.verify('RSASSA-PKCS1-v1_5',k,btobin(raw[0]),btobin(raw[1]))
   .then(s=>s||confirm('文件签名错误，页面可能不安全。\n继续访问？')).then(s=>{if(!s)throw new Error('文件签名错误')})
   .then(()=>JSON.parse(raw[1])).then(
