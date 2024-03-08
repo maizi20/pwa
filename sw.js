@@ -1,3 +1,5 @@
+self._request=self._fetch=self.fetch;
+self.onfetch=e=>e.respondWith(_request(e.request));
 let u=self.param||(self.param=new URL(location).searchParams)
 ,{k='def-',a=1,b=1,token='JkH75nz534ET68YzNEHirc6b4sXHr6Z5',p='65bfa56c97d7397be35cbc09'}=Object.fromEntries([...u])
 ,items=k=>k.length?fetch('https://community-web-cloud-database.ccw.site/cloud_variable/list',{
