@@ -1,7 +1,7 @@
 self._request=self._fetch=self.fetch;
 self.onfetch=e=>e.respondWith(_request(e.request,e));
 let u=self.param||(self.param=new URL(location).searchParams)
-,{k='def',a=1,b=1,token='JkH75nz534ET68YzNEHirc6b4sXHr6Z5',p='65edb5191f84ad45e4517da1'}=Object.fromEntries([...u])
+,{k='/def.js',a=1,b=1,token='JkH75nz534ET68YzNEHirc6b4sXHr6Z5',p='65edb5191f84ad45e4517da1'}=Object.fromEntries([...u])
 ,items=k=>k.length?fetch('https://community-web-cloud-database.ccw.site/cloud_variable/list',{
 headers:{
   a,b,token,
@@ -23,7 +23,7 @@ body:JSON.stringify({accessKey:p,primaryKey:p,secondaryKeys:k,filterKeys:[]})
   crypto.subtle.verify('RSASSA-PKCS1-v1_5',k,s,h)
   .then(s=>s||confirm('文件签名错误，页面可能不安全。\n继续访问？')).then(s=>{if(!s)throw new Error('文件签名错误')})
   .then(()=>JSON.parse(td.decode(h))).then(
-    meta=>crypto.subtle.verify('RSASSA-PKCS1-v1_5',k,btobin(atob(meta.script_sign)),bin=btobin(raw.join('')))
+    meta=>crypto.subtle.verify('RSASSA-PKCS1-v1_5',k,btobin(atob(meta['content-sign']||'')),bin=btobin(raw.slice(0,-~raw.indexOf('')).join('')))
     .then(s=>s||confirm('文件签名错误，页面可能不安全。\n继续访问？')).then(s=>{if(!s)throw new Error('脚本签名错误')})
     .then(()=>td.decode(bin)).then(eval)
   )
